@@ -41,6 +41,17 @@ effects.poison = {
     }
 };
 
+effects.wither = {
+    // Display
+    color: [108, 50, 117],
+    // Misc
+    name: 'wither',
+    // Methods
+    onTick: function(e) {
+        e.dealDamage((e.maxHealth/25), 'poison');
+    }
+};
+
 effects.regen = {
     // Display
     color: [210, 82, 127],
